@@ -1,11 +1,18 @@
 # Quick Rides BW Website
 
-Quick Rides BW — fair fares, better rides, stronger communities.
+A responsive, Botswana-first marketing website for Quick Rides BW.
 
-This repository contains the Quick Rides BW responsive marketing website, including driver/passenger messaging, the Quick Care Programme, and an Android APK download section with a QR code.
+## Included
+- Botswana blue / national-inspired visual system
+- Driver, passenger and local-business messaging
+- Quick Care Programme section
+- Responsive mobile-first layout
+- Android APK download CTA
+- QR code pointing to the current MediaFire APK
+- Lightweight static HTML/CSS — no build step required
 
 ## Android APK
 https://www.mediafire.com/file/sskxwft55l785o4/Quick+Rides+BW.apk/file
 
-## GitHub Pages
-The site is a static `index.html` and can be deployed directly with GitHub Pages or connected to Vercel.
+## Deployment
+The site is a static `index.html` and can be deployed with GitHub Pages or connected to Vercel.
