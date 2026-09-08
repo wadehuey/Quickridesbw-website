@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Admin Analytics | Quick Rides BW</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+body{background:#f5f8fc}.admin{max-width:1100px;margin:auto;padding:28px 18px}.top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:22px}.top h1{margin:0}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.card{background:#fff;border-radius:16px;padding:18px;box-shadow:0 4px 20px rgba(0,0,0,.06)}.label{font-size:12px;color:#667085;text-transform:uppercase}.value{font-size:30px;font-weight:800;margin-top:5px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}.row{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid #edf0f5;font-size:14px}.login{max-width:430px;margin:10vh auto;background:#fff;padding:26px;border-radius:18px;box-shadow:0 8px 35px rgba(0,0,0,.08)}input{width:100%;box-sizing:border-box;padding:12px;border:1px solid #d8dee9;border-radius:10px;margin:7px 0 12px}.btn{border:0;cursor:pointer;padding:11px 16px;border-radius:10px;font-weight:700}.primary{background:#0875e1;color:white}.muted{color:#667085;font-size:13px}.error{color:#b42318;font-size:13px}.hidden{display:none!important}@media(max-width:760px){.cards{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr}.top{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<div id="login" class="login">
+<h2>Quick Rides BW Admin</h2><p class="muted">Sign in to view website analytics.</p>
+<label>Email</label><input id="email" type="email" value="waronajobs@gmail.com" autocomplete="username">
+<label>Password</label><input id="password" type="password" autocomplete="current-password">
+<button id="loginBtn" class="btn primary">Sign in</button><p id="loginError" class="error"></p>
+</div>
+<div id="dashboard" class="admin hidden">
+<div class="top"><div><h1>Website Analytics</h1><p class="muted" id="rangeText">Last 7 days</p></div><div><button id="refresh" class="btn primary">Refresh</button> <button id="logout" class="btn">Log out</button></div></div>
+<div class="cards"><div class="card"><div class="label">Unique visitors</div><div class="value" id="visitors">0</div></div><div class="card"><div class="label">Page views</div><div class="value" id="views">0</div></div><div class="card"><div class="label">Sessions</div><div class="value" id="sessions">0</div></div><div class="card"><div class="label">Tracked events</div><div class="value" id="events">0</div></div></div>
+<div class="grid"><div class="card"><h3>Most visited pages</h3><div id="pages"></div></div><div class="card"><h3>Events</h3><div id="eventList"></div></div><div class="card"><h3>Devices</h3><div id="devices"></div></div><div class="card"><h3>Browsers</h3><div id="browsers"></div></div></div>
+</div>
+<script type="module" src="admin.js"></script>
+</body></html>
